@@ -67,3 +67,36 @@ Fo - find the previous `o`
 * - find the next occurence of the word
 # - find the previous occurence of the word
 ```
+
+Change Command
+```
+operator [number] motion
+
+operator - is what to do, such as `d` for delete
+[number] - is an optional count to repeat the motion
+motion - moves over the text to operate on, such as `w (word)`, 
+`$ (to the end of the line)`, etc.
+```
+
+Undo
+```
+u - to undo previous action
+U - to undo all the changes on a line
+CTRL+R - redo the previous action
+```
+
+Paste
+```
+p - paste below the line
+P - paste above the lien
+```
+
+Replace
+```
+r[character] - replace character at the cursor with [character]
+```
+
+Change
+```
+ce - change until the end of a word
+```
