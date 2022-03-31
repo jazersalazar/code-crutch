@@ -3,11 +3,13 @@
 ## Mode
 
 ```
-i = insert before the curso
-I = insert before the line
-a = append after the cursor
-A = append after the line
-esc/ctrl-c = edit mode 
+esc/ctrl-c - edit mode
+i - insert before the curso
+I - insert before the line
+a - append after the cursor
+A - append after the line
+o - insert next line
+O - insert previous line
 ```
 
 ## Navigation
@@ -88,7 +90,7 @@ CTRL+R - redo the previous action
 Paste
 ```
 p - paste below the line
-P - paste above the lien
+P - paste above the line
 ```
 
 Replace
@@ -99,4 +101,26 @@ r[character] - replace character at the cursor with [character]
 Change
 ```
 ce - change until the end of a word
+```
+
+String Search
+```
+/[string] - search for a phrase, pressed <ENTER> to finalize the search
+?[string] - search for a phrase in the backward direction
+n - search for the same phrase again
+N - search for the same phrase in the opposite direction
+```
+
+Matching Parentheses
+```
+% - to move the cursor to the other matching bracket
+```
+
+Substitute
+```
+:s/[old]/[new]/[flag]
+g - flag means to change all the occurence in selected text
+:s/old/new/g - to substitute 'new' for 'old'
+:[line number]s/old/new/g
+:#,#s/old/new/g - substitue characters in specific line number range
 ```
